@@ -1,0 +1,289 @@
+body
+{
+    font-size: 100%;
+    background-image: url("Charte/BACKGROUND/background village.png");
+}
+
+
+.tous
+{
+    background-color: rgba(255, 255, 255, 0.8);
+    overflow: visible;
+    max-width: 1200px;
+    box-shadow: -2px 1px 8px #000;
+
+}
+#navbar a:hover{
+    color: #98633c;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 5em;
+    width: 30em;
+    box-shadow: 10px 8px 16px 8px black;
+    border-radius: 8px;
+    z-index: 1;
+    right:-1px;
+
+
+}
+.liste{
+    color: black;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+
+
+}
+.dropdown-content a,input,h6,button,p{
+    margin: 10px 8px;
+    font-size: 80%;
+}
+
+.pfff{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+
+}
+
+button p{
+    color: white;
+
+}
+.dropdown-content button{
+    margin: auto;
+}
+
+#navbar
+{
+    align-self: flex-start;
+    justify-self: flex-end;
+    width: 100%;
+    position: relative;
+    right: 22%;
+    top: 5%;
+
+}
+.colonne{
+    width:10em;
+}
+
+
+#nav1 a
+{
+    color: midnightblue;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+
+#nav2
+{
+    background-color: dimgrey;
+    font-size: 1.2rem;
+}
+
+#nav2 div
+{
+    width: 75%;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 0;
+}
+
+#nav2 a
+{
+    color: #fff;
+}
+
+#nav3
+{
+    background-color: rgb(55, 55, 55);
+    font-weight: 500;
+}
+
+.nav-link
+{
+    color: #fff;
+}
+
+#navlogo
+{
+
+    z-index: 2;
+    width: 22%;
+}
+
+#navlogo img
+{
+    z-index: 2;
+    width: 110%;
+}
+
+
+
+
+@media screen and (max-width: 1024px) {
+
+    body
+    {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav a {
+        display: flex;
+        flex-direction: column;
+    }
+    body
+    {
+        font-size: 0.9rem;
+    }
+}
+.box{
+    display: flex;
+    justify-content:space-around;
+    margin-top: 20px;
+}
+.imgb4{
+    margin-top: 30px;
+}
+.cat{
+    margin-top: 10px;
+    margin-left: 30px;
+    color: midnightblue;
+    font-weight:bolder ;
+}
+.flex-container{
+
+    display: flex;
+    padding-right: 10px;
+    background-color: white;
+
+}
+#categorie{
+    padding-right: 120%;
+}
+.log{
+    display: flex;
+    justify-content:space-around;
+    margin-top: 20px;
+}
+.cat1{
+    margin-top: 10px;
+    margin-left: -288px;
+    color: midnightblue;
+    font-weight:bolder ;
+}
+
+#titre{
+    margin-left: -330px;
+}
+.fin{
+    background-image: url("Charte/FOOTER/footer.png");
+    overflow: visible;
+    max-width: 1230px;
+}
+.offre{
+    margin-top: 5px;
+}
+.btn {
+    background-color: #8d3d00;
+    width: 100%;
+}
+.p{
+    color: #ffffff;
+}
+.log1{
+    display: flex;
+    justify-content:space-between;
+    margin-top: 20px;
+}
+
+h1{
+    text-align: center;
+}
+label div{
+    max-width: 10em;
+}
+.b1 label
+{
+    display: block;
+    width: 100px;
+    float: left;
+    margin-left: 80px;
+}
+.b2 label
+{
+    display: block;
+    width: 100px;
+    float: left ;
+}
+.parti1 {
+
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    max-height: 800px;
+}
+.envoi button{
+    color: #98633c;
+}
+#envoyer1{
+    width: 10%;
+
+   margin-left: 45%;
+    margin-top: -20%;
+
+}
+
+ .b1 input  {
+    background-color: rgb(197, 197, 197) !important;
+    border-radius: 0.3rem !important;
+    border: #BBBBBB;
+    height:40px;
+
+
+}
+.b2{
+    max-height: 40%;
+}
+ .b2 input{
+     background-color: rgb(197, 197, 197) !important;
+     border-radius: 0.3rem !important;
+     border: #BBBBBB;
+     height: 40px;
+ }
+
+.b2 span{
+    margin-left: 120px;
+}
+ .b2 label{
+     margin-top: 10px;
+ }
+ .b1 label{
+     margin-top: 10px;
+ }
+ .imgb{
+     margin-top: 45px;
+ }
+.esp{
+    margin-top: 10%;
+}
+.b{
+    height: 20px;
+
+}
