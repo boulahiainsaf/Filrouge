@@ -28,7 +28,7 @@ class Connect extends CI_Controller
                 $buse['user'] = $b;
             if ($b != NULL) {
                 if (password_verify($password, $row->cli_mot_pass)) {
-                    if ($row->role == 1) {
+                    if ($row->cli_type == 2) {
                         $this->session->set_userdata('admine', $mail);
                         $this->session->set_userdata('password', $password);
                         $this->session->set_userdata('nom', $row->cli_nom);
