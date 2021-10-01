@@ -5,17 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="44b7587f-8e65-4203-a14d-307009b8de9b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/filrougeins.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/config/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/config.php" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/application/controllers/Produits.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Produits.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/models/Clients.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/Clients.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/models/Commandes.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/Commandes.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/models/Employee.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/Employee.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/models/ProduitsModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/ProduitsModel.php" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/application/controllers/Connect.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Connect.php" afterDir="false" />
+>>>>>>> 2e68bd4378780c41f0711a5fbb53eb22dc7c74f5
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +29,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1ytcYPUZSDe6bbLaHr01ctnTQEk" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -57,5 +60,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
