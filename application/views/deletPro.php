@@ -10,6 +10,6 @@ foreach ($Delet_pro as $row) {
 <from>
     <div class="d-flex justify-content-center" name = actionProduit>
         <button class="btn btn-secondary "><a class="nav-link"  href="'.site_url().'/Produits/liste">Annuler</a></button>
-        <button class="btn btn-danger"><a class="nav-link"  href="'.site_url().'/Produits/Deletepro/'.$row->Id_produits.'">Supprimer</a></button>
+        <button class="btn btn-danger"><a class="nav-link"  href="'.site_url().'/Produits/supProduits/'.$row->Id_produits.'">Supprimer</a></button>
     </div><br/>';}
 ?>

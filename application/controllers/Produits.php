@@ -267,8 +267,11 @@ public function prodetail(){
         // Charger form_validation library
         $this->load->library('form_validation');
 
+<<<<<<< HEAD
         // Charger le modèle
         $this->load->model('ProduitsModel');
+=======
+>>>>>>> 80589f967b6df014bb3bbe8dcd9c644b5e01650f
 
         // --!! Commenté car XSS_clean ne doit être appliqué qu'aux données de sortie !!--
         // Charger security helper pour éviter l'erreur xss_clean
@@ -305,17 +308,30 @@ public function prodetail(){
         // Si non-valide, charger le vue create
         // Si valide, envoyer les données au modèle
         if ($this->form_validation->run() === FALSE) {
+<<<<<<< HEAD
             $this->load->view('header1');
             $this->load->view('create', $data);
+=======
+            $this->load->view('header');
+            $this->load->view('create');
+>>>>>>> 80589f967b6df014bb3bbe8dcd9c644b5e01650f
             $this->load->view('footer');
 
         } else {
             $this->load->model('ProduitsModel');
             $this->ProduitsModel->createPro($data);
 
+<<<<<<< HEAD
             $this->load->view('header1');
+=======
+            $this->load->view('header');
+>>>>>>> 80589f967b6df014bb3bbe8dcd9c644b5e01650f
             $this->load->view('accueil');
             $this->load->view('footer');
         }
     }
+<<<<<<< HEAD
 }
+=======
+    }
+>>>>>>> 80589f967b6df014bb3bbe8dcd9c644b5e01650f
