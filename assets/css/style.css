@@ -1,7 +1,7 @@
 body
 {
     font-size: 100%;
-    background-image: url("Charte/BACKGROUND/background village.png");
+    background-image: url("http://localhost:8080/filrougeins/assets/Charte/BACKGROUND/background village.png");
 }
 
 
@@ -193,7 +193,7 @@ button p{
     margin-left: -330px;
 }
 .fin{
-    background-image: url("Charte/FOOTER/footer.png");
+
     overflow: visible;
     max-width: 1230px;
 }

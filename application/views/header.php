@@ -14,7 +14,9 @@
         <nav class="navbar navbar-expand p-0">
             <div class="row container-fluid p-0 m-0 ">
                 <div id="navlogo" class="p-0">
+                    <a href="<?php echo base_url();?>index.php/Produits/accueil">
                     <img id="logo" src="<?php echo base_url();?>assets/Charte/HEADER/logo village green.png" alt="Logo Village Green" title="Logo Village Green">
+                    </a>
                 </div>
 
                 <div id="navbar" class="p-0">
@@ -22,25 +24,35 @@
                     <div class="row m-0" id="nav1">
                         <div class="container navbar d-flex justify-content-end p-0" >
                             <a class="nav-link" href="#">Infos</a>
+                            <?php if(isset($this->session->nom)){?>
+                                <a class="nav-link" href="<?php echo base_url();?>index.php/Connect/deconnect">Deconnecter</a>
+                            <?php }?>
                             <div class="dropdown" >
-                                <a class="nav-link" href="#">Espace Client</a>
+                            <a class="nav-link" href="#">Espace Client<br>
+                                <?php echo $this->session->nom." ".$this->session->prenom; ?>
+                            </a>
+
                                 <div class="dropdown-content " >
                                     <div class="pfff">
                                         <div >
-                                            <?php echo form_open(); ?>
-                                            <form method="POST" action="<?php echo base_url();?>/index.php/Connect/inscri/verefconnect" class="col-10" enctype="multipart/form-data">
+
+                                            <form method="POST" action="<?php echo base_url()?>index.php/Connect/verefconnect" class="col-10" enctype="multipart/form-data">
                                                 <h6>Etes-vous déjà clients chez nous ? </h6>
                                                 <input  name="mail" class="form-control" id="mail" placeholder="Adresse E-mail" >
                                                 <?php echo form_error('mail'); ?>
-                                                <p style="color: red;" id="c2"> </p>
-                                                <P></P>
-                                                <input name="pass" class="form-control" id="pass"placeholder="Mot de passe"><br>
-                                                <?php echo form_error('pass'); ?>
-                                                <input class="form-check-input" type="checkbox">Rester connecté
-                                                <input type="submit" id="envoyer1" class="btn btn-dark " value="Se connecter maintenant">
 
-                                                <a class="nav-link">Vous avez oublié votre mot de passe ?</a>
+                                                <p style="color: red;" id="c2"> </p>
+                                                <p></p>
+                                                <input name="pass" class="form-control" id="pass"placeholder="Mot de passe" type="password">
+                                                <?php echo form_error('pass'); ?>
+                                                <input  type="checkbox">
+                                                <label for="vehicle1">Rester connecté</label><br>
+                                                <?php echo $this->session->flashdata("error");?>
+
+                                                <input type="submit" class="btn btn-dark  value="se connecter">
                                             </form>
+                                                <a class="nav-link">Vous avez oublié votre mot de passe ?</a>
+
                                         </div>
                                         <div  >
 

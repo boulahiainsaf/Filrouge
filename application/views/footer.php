@@ -1,3 +1,7 @@
+</div><br>
+
+</div>
+
 <div class="fin container p-0">
     <img src="<?php echo base_url();?>/assets/Charte/FOOTER/footer%20SIMPLE.png">
 </div>

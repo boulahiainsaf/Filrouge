@@ -11,7 +11,7 @@ class Clients extends CI_Model
         $this->load->database();
 
         // Exécute la requête
-        $results = $this->db->query("SELECT * FROM clients  where cli_mail =".$mail);
+        $results = $this->db->query("SELECT * FROM clients  where cli_mail ='".$mail."'");
 
         // Récupération des résultats
         $aListe = $results->result();
@@ -19,6 +19,24 @@ class Clients extends CI_Model
     }
     public function inseruser($use){
 
-            $this->db->insert('produits', $use);
+            $this->db->insert('clients', $use);
     }
+    public function coef($mail)
+    {
+        $this->load->helper('form', 'url');
+        // Charge la librairie 'database'
+        // Charge la librairie 'database'
+        $this->load->database();
+
+        // Exécute la requête
+        $results = $this->db->query("SELECT cli_coefficient FROM clients  where cli_mail ='".$mail."'");
+
+        // Récupération des résultats
+        $coeff = $results->result();
+        return $coeff;
+    }
+
+
+
+
 }
