@@ -26,7 +26,7 @@ class ProduitsModel extends CI_Model
         return $aListe;
     }
     public function deletpro($id){
-        $this->db->where('pro_id', $id);
+        $this->db->where('Id_produits', $id);
         $this->db->delete('produits');
     }
 

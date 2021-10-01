@@ -245,4 +245,75 @@ public function prodetail(){
         $this->load->view('create');
         $this->load->view('footer');
     }
-}
+
+    public function createProd()
+    {
+
+        $data = array(
+            'pro_lib_court' => $this->input->post('pro_lib_court'),
+            'pro_lib_long' => $this->input->post('pro_lib_long'),
+            'pro_fou_ref' => $this->input->post('pro_fou_ref'),
+            'pro_photo' => $this->input->post('pro_photo'),
+            'pro_pri_achat' => $this->input->post('pro_pri_achat'),
+            'pro_stock' => $this->input->post('pro_stock'),
+            'pro_bloque' => $this->input->post('pro_bloque'),
+            'id_fournisseurs_pro' => $this->input->post('id_fournisseurs_pro'),
+            'id_categories_pro' => $this->input->post('id_categories_pro')
+        );
+
+        // Charger form helper
+        $this->load->helper('form');
+
+        // Charger form_validation library
+        $this->load->library('form_validation');
+
+
+        // --!! Commenté car XSS_clean ne doit être appliqué qu'aux données de sortie !!--
+        // Charger security helper pour éviter l'erreur xss_clean
+        // (xss_clean n'est pas dans la bibliothèque form_validation)
+        // $this->load->helper('security');
+
+        // Régles de validation
+        // libellé court : requis
+        $this->form_validation->set_rules('pro_lib_court', 'Libellé court', 'required');
+
+        // libellé long : requis
+        $this->form_validation->set_rules('pro_lib_long', 'Libellé long', 'required');
+
+        // Référence du fournisseur : requis|caractères alphanumériques
+        $this->form_validation->set_rules('pro_fou_ref', 'Référence du fournisseur', 'required|alpha_numeric');
+
+        // Format de photos : requis
+        $this->form_validation->set_rules('pro_photo', 'Photo du produit', 'required');
+
+        // Prix d'achat : requis|doit être un entier ou un nombre à deux décimales
+        $this->form_validation->set_rules('pro_pri_achat', 'Prix d\'achat', 'required|regex_match[/^([0-9]+\.?[0-9]{2})$/]');
+
+        // Stock : requis|numériques
+        $this->form_validation->set_rules('pro_stock', 'Stock', 'required|numeric');
+
+        // ID de fournisseur : requis|numériques
+        $this->form_validation->set_rules('id_fournisseurs_pro', 'ID du fournisseur', 'required|numeric');
+
+        // Identifiant de catégoris : requis|numériques
+        $this->form_validation->set_rules('id_categories_pro', 'ID de catégorie', 'required|numeric');
+
+
+        // verifier la validation
+        // Si non-valide, charger le vue create
+        // Si valide, envoyer les données au modèle
+        if ($this->form_validation->run() === FALSE) {
+            $this->load->view('header');
+            $this->load->view('create');
+            $this->load->view('footer');
+
+        } else {
+            $this->load->model('ProduitsModel');
+            $this->ProduitsModel->createPro($data);
+
+            $this->load->view('header');
+            $this->load->view('accueil');
+            $this->load->view('footer');
+        }
+    }
+    }
