@@ -8,7 +8,11 @@ class ProduitsModel extends CI_Model
         $this->load->database();
 
         // Exécute la requête
-        $results = $this->db->query("SELECT * FROM produits JOIN categories ON categories.Id_categories=produits.Id_categories_pro");
+        //$results = $this->db->query("SELECT * FROM produits JOIN categories ON categories.Id_categories=produits.Id_categories_pro");
+        $this->db->select('*');
+        $this->db->from('produits');
+        $this->db->join('categories', 'produits.Id_categories_pro = categories.Id_categories');
+        $results = $this->db->get();
 
         // Récupération des résultats
         $aListe = $results->result();
@@ -18,8 +22,12 @@ class ProduitsModel extends CI_Model
     public function detailpro($id){
         $this->load->database();
 
-        // Exécute la requête
-        $results = $this->db->query("SELECT * FROM produits JOIN categories ON categories.Id_categories=produits.Id_categories_pro  where Id_produits=".$id);
+        //$results = $this->db->query("SELECT * FROM produits JOIN categories ON produits.Id_categories_pro=categories.Id_categories  where produits.Id_produits=".$id);
+        $this->db->select('*');
+        $this->db->from('produits');
+        $this->db->join('categories', 'produits.Id_categories_pro = categories.Id_categories');
+        $this->db->where('produits.Id_produits', $id);
+        $results = $this->db->get();
 
         // Récupération des résultats
         $aListe = $results->result();
@@ -30,21 +38,31 @@ class ProduitsModel extends CI_Model
         $this->db->delete('produits');
     }
 
-public function tricroi(){
-    $this->load->database();
+    public function tricroi(){
+        $this->load->database();
 
-    // Exécute la requête
-    $results = $this->db->query("SELECT * FROM produits JOIN categories ON categories.Id_categories=produits.Id_categories_pro  ORDER BY pro_pri_achat ASC");
+        // Exécute la requête
+        //$results = $this->db->query("SELECT * FROM produits JOIN categories ON categories.Id_categories=produits.Id_categories_pro  ORDER BY pro_pri_achat ASC");
+        $this->db->select('*');
+        $this->db->from('produits');
+        $this->db->join('categories', 'produits.Id_categories_pro = categories.Id_categories');
+        $this->db->order_by('pro_pri_achat', 'ASC');
+        $results = $this->db->get();
 
-    // Récupération des résultats
-    $aListe = $results->result();
-    return $aListe;
-}
+        // Récupération des résultats
+        $aListe = $results->result();
+        return $aListe;
+    }
     public function tridecroi(){
         $this->load->database();
 
         // Exécute la requête
-        $results = $this->db->query("SELECT * FROM produits JOIN categories ON categories.Id_categories=produits.Id_categories_pro  ORDER BY pro_pri_achat DESC");
+        //$results = $this->db->query("SELECT * FROM produits JOIN categories ON categories.Id_categories=produits.Id_categories_pro  ORDER BY pro_pri_achat DESC");
+        $this->db->select('*');
+        $this->db->from('produits');
+        $this->db->join('categories', 'produits.Id_categories_pro = categories.Id_categories');
+        $this->db->order_by('pro_pri_achat', 'DESC');
+        $results = $this->db->get();
 
         // Récupération des résultats
         $aListe = $results->result();
@@ -55,7 +73,12 @@ public function tricroi(){
         $this->load->database();
 
         // Exécute la requête
-        $results = $this->db->query("SELECT * FROM produits JOIN categories ON categories.Id_categories=produits.Id_categories_pro  ORDER BY pro_date_ajou DESC");
+        //$results = $this->db->query("SELECT * FROM produits JOIN categories ON categories.Id_categories=produits.Id_categories_pro  ORDER BY pro_date_ajou DESC");
+        $this->db->select('*');
+        $this->db->from('produits');
+        $this->db->join('categories', 'produits.Id_categories_pro = categories.Id_categories');
+        $this->db->order_by('pro_date_ajou', 'DESC');
+        $results = $this->db->get();
 
         // Récupération des résultats
         $aListe = $results->result();

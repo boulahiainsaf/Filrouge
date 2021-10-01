@@ -9,8 +9,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/filrougeins.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/config/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/config.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/controllers/Produits.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Produits.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/models/ProduitsModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/ProduitsModel.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +48,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633074371686</updated>
-      <workItem from="1633074372912" duration="1715000" />
+      <workItem from="1633074372912" duration="3320000" />
     </task>
     <servers />
   </component>
