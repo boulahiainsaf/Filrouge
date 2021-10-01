@@ -11,7 +11,10 @@ class Employee extends CI_Model
         $this->load->database();
 
         // Exécute la requête
-        $results = $this->db->query("SELECT Id_employees FROM employees  where emp_nom ='".$nom."'");
+        //$results = $this->db->query("SELECT Id_employees FROM employees  where emp_nom ='".$nom."'");
+        $this->db->select('Id_employees');
+        $this->db->from('employees');
+        $this->db->where('emp_nom', $nom);
 
         // Récupération des résultats
         $id = $results->result();
