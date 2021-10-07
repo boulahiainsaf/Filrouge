@@ -6,6 +6,19 @@
   <component name="ChangeListManager">
     <list default="true" id="44b7587f-8e65-4203-a14d-307009b8de9b" name="Changes" comment="Changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
+=======
+      <change beforePath="$PROJECT_DIR$/application/config/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/config.php" afterDir="false" />
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/application/controllers/Produits.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Produits.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/models/Clients.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/Clients.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/models/Commandes.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/Commandes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/models/Employee.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/Employee.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/models/ProduitsModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/ProduitsModel.php" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/application/controllers/Connect.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Connect.php" afterDir="false" />
+>>>>>>> 2e68bd4378780c41f0711a5fbb53eb22dc7c74f5
+>>>>>>> 60cbce4622b9b7e4ef70818ee32663ba2db8fd01
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,9 +58,13 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633074371686</updated>
+<<<<<<< HEAD
       <workItem from="1633074372912" duration="3320000" />
       <workItem from="1633189385475" duration="286000" />
       <workItem from="1633249483351" duration="601000" />
+=======
+      <workItem from="1633074372912" duration="5443000" />
+>>>>>>> 60cbce4622b9b7e4ef70818ee32663ba2db8fd01
     </task>
     <servers />
   </component>

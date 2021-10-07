@@ -9,7 +9,11 @@ class Commandes extends CI_Model
             $this->load->database();
 
             // Exécute la requête
-            $comme = $this->db->query("SELECT * FROM commandes join clients ON commandes.Id_clients=clients.Id_clients ");
+            //$comme = $this->db->query("SELECT * FROM commandes join clients ON commandes.Id_clients=clients.Id_clients ");
+            $this->db->select('*');
+            $this->db->from('commandes');
+            $this->db->join('clients', 'commandes.Id_clients=clients.Id_clients');
+            $comme = $this->db->get();
 
             // Récupération des résultats
             $Cliste = $comme->result();
@@ -22,7 +26,12 @@ class Commandes extends CI_Model
             $this->load->database();
 
             // Exécute la requête
-            $comme = $this->db->query("SELECT * FROM commandes join clients ON commandes.Id_clients=clients.Id_clients where Id_commandes=".$idcom);
+            //$comme = $this->db->query("SELECT * FROM commandes join clients ON commandes.Id_clients=clients.Id_clients where Id_commandes=".$idcom);
+            $this->db->select('*');
+            $this->db->from('commandes');
+            $this->db->join('clients', 'commandes.Id_clients=clients.Id_clients');
+            $this->db->where('Id_commandes', $idcom);
+            $comme = $this->db->get();
 
             // Récupération des résultats
             $Commande = $comme->result();
