@@ -45,7 +45,7 @@ class Connect extends CI_Controller
                         $this->session->set_userdata('coef',$row->cli_coefficient);
 
                         $this->load->view('header');
-                        $this->load->view('liste1',$bView);
+                        $this->load->view('liste',$bView);
                         $this->load->view('footer');
 
                     }

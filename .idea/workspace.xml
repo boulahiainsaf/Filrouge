@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44b7587f-8e65-4203-a14d-307009b8de9b" name="Changes" comment="">
+    <list default="true" id="44b7587f-8e65-4203-a14d-307009b8de9b" name="Changes" comment="Changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/config/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Connect.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Connect.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +30,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../word1/wp-content/plugins/pluginSatisfaction" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -47,6 +46,8 @@
       <option name="presentableId" value="Default" />
       <updated>1633074371686</updated>
       <workItem from="1633074372912" duration="3320000" />
+      <workItem from="1633189385475" duration="286000" />
+      <workItem from="1633249483351" duration="601000" />
     </task>
     <servers />
   </component>
