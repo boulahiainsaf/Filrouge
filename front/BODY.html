@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>jarditou</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="accueil.css">
+    </head>
+
+<body>
+    <section class="tous">
+    <form  action="index.php/Connect/verinsci" method="POST" id="form">
+        <h1>Créez vos identifiants</h1>
+
+        <div class="parti1">
+            <div class="b1">
+                <label>E-mail</label>
+                <input id="mail"name="cli_mail"  type="text" id="courriel1" size="40" value= ""/>
+                <span class="text-danger"></span>
+                <span style="color: red;"  id="c1"> </span><br>
+                <label >Créez votre mot de pass</label>
+
+                <input id="pass" type="password" name="cli_mot_pass" size="40" value= ""/><br>
+                <span style="color: red;"  id="c2"> </span>
+                <span class="text-danger"></span>
+                <div class="b2 d-md-block d-lg-none">
+                    <br>
+                    <br>
+                    <label>Confirmation mot de pass</label>
+                    <input type="password" name="pass2" size="40" id="pass2" value= ""/><br>
+                    <span style="color: red;"  id="c3"> </span>
+    
+                </div>
+            </div>
+            <div class="b2 d-md-none d-sm-none d-lg-block">
+                <br>
+                <br>
+                <label>Confirmation mot de pass</label>
+                <input type="password" name="pass2" size="40" id="pass2" value= ""/><br>
+                <span style="color: red;"  id="c3"> </span>
+
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <h1>Créez vos identifiants</h1><br>
+        <div class="parti1">
+            <div class="b1 ">
+                <br>
+                <label>Prénom</label>
+                <input type="text"size="40"id="prenom"name="cli_prenom" value= ""/><br>
+                <p style="color: red;"  id="c4"> </p>
+                <span class="text-danger"></span>
+                <label>Nom</label>
+                <input type="text"size="40" id="nom" name="cli_nom" value= ""/><br>
+                <p style="color: red;"  id="c5"> </p>
+                <span class="text-danger"></span>
+                <label>Adresse</label>
+                <input type="text"size="40"id="adresse" name="cli_adresse" value= ""/><br>
+                <p style="color: red;"  id="c6"> </p>
+                <span class="text-danger"></span>
+                <label>Complément d’adresse</label>
+                <input type="text"size="40"id="cpAdresse"value= ""/>
+                <p></p>
+                <label>Code postal</label>
+                <input type="text"size="40" name="cli_cp" id="cp"value= ""/><br>
+                <p style="color: red;"  id="c7"> </p>
+                <span class="text-danger"></span>
+                <label>Ville</label>
+                <input type="text"size="40"id="ville" name="cli_ville" value= ""/><br>
+                <p style="color: red;"  id="c8"> </p>
+                <span class="text-danger"></span>
+                <label>Pays</label>
+                <input type="text"size="40"id="pays" name="cli_pays" value=""/><br>
+                <p style="color: red;"  id="c9"> </p>
+                <span class="text-danger"></span>
+            </div>
+
+                 <div class="b d-md-none d-sm-none d-lg-block">
+                        <img class="imgb" src="Charte/BODY/ESPACE CLIENT/CADRE numero.png" >
+                </div>
+        </div>
+            <div class="esp"></div>
+            <input type="submit" id="envoyer1" class="btn" value="envoyer"/>
+
+    </form>
+    <div class="">
+        <div class="embed-responsive embed-responsive-16by9">
+        <img class="embed-responsive-item" src="Charte/BODY/ESPACE CLIENT/bas de page pictos.png">
+        </div>
+    </div>
+    </section>
+            <section class="to">
+                <div class="embed-responsive embed-responsive-16by9">
+                 <img class="embed-responsive-item" src="Charte/FOOTER/footer SIMPLE.png">
+                </div> 
+            </section>
+    
+</body>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
